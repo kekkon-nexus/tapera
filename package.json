@@ -2,6 +2,12 @@
 	"name": "tapera-tapi-jelek",
 	"module": "index.ts",
 	"type": "module",
+	"scripts": {
+		"dev": "bun run --hot index.ts"
+	},
+	"dependencies": {
+		"hono": "^4.4.3"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.0",
 		"@types/bun": "latest"
