@@ -1,5 +1,11 @@
 {
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.insertSpaces": false,
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	}
 }
