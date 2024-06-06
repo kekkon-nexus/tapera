@@ -17,6 +17,16 @@ export default jsxRenderer(({ children, title }, c) => (
 			<Link rel="stylesheet" href="/style.css" />
 			<Script src="/app/client.ts" async nonce={c.get("secureHeadersNonce")} />
 		</head>
-		<body>{children}</body>
+		<body>
+			<header>
+				<nav class="navbar bg-base-100">
+					<a href="/" class="btn btn-ghost text-xl">
+						<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
+						Tapera
+					</a>
+				</nav>
+			</header>
+			<main>{children}</main>
+		</body>
 	</html>
 ));
