@@ -3,14 +3,16 @@
 	"module": "index.ts",
 	"type": "module",
 	"scripts": {
-		"dev": "bun run --hot index.tsx"
+		"dev": "vite"
 	},
 	"dependencies": {
-		"hono": "^4.4.3"
+		"hono": "^4.4.3",
+		"honox": "^0.1.19"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.0",
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"vite": "^5.2.12"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
