@@ -1,7 +1,7 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import { Link } from 'honox/server'
+import { Link, Script } from "honox/server";
 
-export default jsxRenderer(({ children, title }) => (
+export default jsxRenderer(({ children, title }, c) => (
 	<html lang="en">
 		<head>
 			<meta charset="UTF-8" />
@@ -9,6 +9,7 @@ export default jsxRenderer(({ children, title }) => (
 			{title ? <title>{title}</title> : <></>}
 
 			<Link rel="stylesheet" href="/style.css" />
+			<Script src="/app/client.ts" async nonce={c.get("secureHeadersNonce")} />
 		</head>
 		<body>{children}</body>
 	</html>

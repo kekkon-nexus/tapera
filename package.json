@@ -3,7 +3,8 @@
 	"module": "index.ts",
 	"type": "module",
 	"scripts": {
-		"dev": "vite"
+		"dev": "vite",
+		"build": "vite build --mode client && vite build"
 	},
 	"dependencies": {
 		"hono": "^4.4.3",
@@ -11,6 +12,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.0",
+		"@hono/vite-ssg": "^0.1.0",
 		"@types/bun": "latest",
 		"autoprefixer": "^10.4.19",
 		"postcss": "^8.4.38",
