@@ -57,19 +57,22 @@ export default jsxRenderer(({ children, title }, c) => (
 					</p>
 				</aside>
 				<nav class="md:place-self-center md:justify-self-end">
-					<div class="grid grid-flow-col gap-4 text-2xl leading-none transition-colors">
+					<div class="grid grid-flow-col gap-4 text-2xl leading-none">
 						<a
 							href="https://www.facebook.com/yvvkir"
-							class="hover:text-[#0866FF]"
+							class="hover:text-[#0866FF] transition-colors"
 						>
 							<i class="si si-facebook" />
 						</a>
-						<a href="https://x.com/yvvvvvvr" class="hover:text-[#000000]">
+						<a
+							href="https://x.com/yvvvvvvr"
+							class="hover:text-[#000000] transition-colors"
+						>
 							<i class="si si-x" />
 						</a>
 						<a
 							href="https://www.youtube.com/@yvvkiRika"
-							class="hover:text-[#FF0000]"
+							class="hover:text-[#FF0000] transition-colors"
 						>
 							<i class="si si-youtube" />
 						</a>
