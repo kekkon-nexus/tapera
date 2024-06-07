@@ -35,8 +35,18 @@ export default jsxRenderer(({ children, title }, c) => (
 				rel="stylesheet"
 				href="https://unpkg.com/simple-icons-font@v12/font/simple-icons.min.css"
 			/>
+			<script
+				src="https://unpkg.com/htmx.org@1.9.12"
+				integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+				crossorigin="anonymous"
+			/>
+			<script
+				src="https://unpkg.com/htmx.org@1.9.12/dist/ext/preload.js"
+				integrity="sha384-NoiTdF/KjxH4wa6OHMdM4F6e/LIPNMcFBgOIINTTaczWo0vX1mWTOzckySqlGQS/"
+				crossorigin="anonymous"
+			/>
 		</head>
-		<body>
+		<body hx-boost="true" hx-ext="preload">
 			<header class="w-full fixed top-0 z-10">
 				<nav class="navbar bg-base-300">
 					<div class="navbar-start">
