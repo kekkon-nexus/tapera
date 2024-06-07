@@ -24,8 +24,16 @@ export default jsxRenderer(({ children, title }, c) => (
 				crossorigin="anonymous"
 			/>
 			<link
-				href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
 				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+			/>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+			/>
+			<link
+				rel="stylesheet"
+				href="https://unpkg.com/simple-icons-font@v12/font/simple-icons.min.css"
 			/>
 		</head>
 		<body>
@@ -40,7 +48,6 @@ export default jsxRenderer(({ children, title }, c) => (
 			<main>{children}</main>
 			<footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
 				<aside class="items-center grid-flow-col">
-					<img src="/static/favicon.svg" alt="Tapera" class="h-10 w-10" />
 					<p>
 						<span class="font-bagnard">
 							Badan Pengelola Tabungan Perumahan Rakyat
@@ -50,7 +57,35 @@ export default jsxRenderer(({ children, title }, c) => (
 					</p>
 				</aside>
 				<nav class="md:place-self-center md:justify-self-end">
-					<div class="grid grid-flow-col gap-4">{/* Social media */}</div>
+					<div class="grid grid-flow-col gap-4 text-2xl leading-none transition-colors">
+						<a
+							href="https://www.instagram.com/bp.tapera"
+							class="hover:text-[#E4405F]"
+						>
+							<i class="si si-instagram" />
+						</a>
+						<a
+							href="https://www.facebook.com/BPTAPERA"
+							class="hover:text-[#0866FF]"
+						>
+							<i class="si si-facebook" />
+						</a>
+						<a href="https://x.com/BP_Tapera" class="hover:text-[#000000]">
+							<i class="si si-x" />
+						</a>
+						<a
+							href="https://www.linkedin.com/company/bp-tapera"
+							class="hover:text-[#0A66C2]"
+						>
+							<i class="si si-linkedin" />
+						</a>
+						<a
+							href="https://www.youtube.com/channel/UCmZovvae-0ZkoRH6o4uWMFw"
+							class="hover:text-[#FF0000]"
+						>
+							<i class="si si-youtube" />
+						</a>
+					</div>
 				</nav>
 			</footer>
 		</body>

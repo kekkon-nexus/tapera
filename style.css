@@ -6,3 +6,7 @@
 	font-family: "Bagnard";
 	src: url("/static/Bagnard.otf");
 }
+
+@layer utilities {
+	.font-variation-fill { font-variation-settings: 'FILL' 1 }
+}
