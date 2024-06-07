@@ -40,7 +40,7 @@ const Hero = () => (
 
 const Services = () => (
 	<div id="services" class="m-4">
-		<h2 class="px-10 pt-10 text-4xl font-bagnard text-center">Jasa</h2>
+		<h2 class="p-10 text-4xl font-bagnard text-center">Jasa</h2>
 		<div class="flex flex-row flex-wrap">
 			<ServiceCard
 				href="#"
@@ -94,7 +94,7 @@ const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 
 const Supporters = () => (
 	<div id="supporters">
-		<h2 class="px-10 pt-10 text-4xl font-bagnard text-center">Pendukung</h2>
+		<h2 class="p-10 text-4xl font-bagnard text-center">Pendukung</h2>
 		<div class="divider pt-4">Inspirasi</div>
 		<SupporterList
 			size="h-[36rem]"
