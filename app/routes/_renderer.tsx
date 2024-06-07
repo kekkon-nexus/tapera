@@ -37,7 +37,7 @@ export default jsxRenderer(({ children, title }, c) => (
 			/>
 		</head>
 		<body>
-			<header class="fixed w-full">
+			<header class="w-full fixed top-0 z-10">
 				<nav class="navbar bg-base-100">
 					<a href="/" class="btn btn-ghost float-start text-xl font-bagnard">
 						<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
