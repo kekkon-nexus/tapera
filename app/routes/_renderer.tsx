@@ -34,6 +34,21 @@ export default jsxRenderer(({ children, title }, c) => (
 				</nav>
 			</header>
 			<main>{children}</main>
+			<footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+				<aside class="items-center grid-flow-col">
+					<img src="/static/favicon.svg" alt="Tapera" class="h-10 w-10" />
+					<p>
+						<span class="font-bagnard">
+							Badan Pengelola Tabungan Perumahan Rakyat
+						</span>
+						<br />
+						Copyright © 2024 - All right reserved
+					</p>
+				</aside>
+				<nav class="md:place-self-center md:justify-self-end">
+					<div class="grid grid-flow-col gap-4">{/* Social media */}</div>
+				</nav>
+			</footer>
 		</body>
 	</html>
 ));
