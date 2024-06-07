@@ -39,10 +39,20 @@ export default jsxRenderer(({ children, title }, c) => (
 		<body>
 			<header class="w-full fixed top-0 z-10">
 				<nav class="navbar bg-base-300">
-					<a href="/" class="btn btn-ghost float-start text-xl font-bagnard">
-						<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
-						<p>Tepar</p>
-					</a>
+					<div class="navbar-start">
+						<a href="/" class="btn btn-ghost float-start text-xl font-bagnard">
+							<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
+							<p>Tepar</p>
+						</a>
+					</div>
+					<div class="navbar-end">
+						<a
+							href="https://github.com/yvvki/tapera-tapi-jelek.git"
+							class="btn btn-circle btn-ghost"
+						>
+							<i class="si si-github text-2xl" />
+						</a>
+					</div>
 				</nav>
 			</header>
 			<main>{children}</main>
