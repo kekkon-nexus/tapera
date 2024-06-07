@@ -101,7 +101,7 @@ const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 const Supporters = () => (
 	<div id="supporters">
 		<h2 class="p-10 text-4xl font-bagnard text-center">Pendukung</h2>
-		<div class="divider pt-4">Inspirasi</div>
+		<div class="divider py-4 font-bagnard">Inspirasi</div>
 		<SupporterList
 			size="h-[36rem]"
 			list={[
@@ -112,7 +112,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider pt-4">Teknologi</div>
+		<div class="divider py-4 font-bagnard">Teknologi</div>
 		<SupporterList
 			size="h-36"
 			list={[
@@ -133,7 +133,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider pt-4">Kerangka</div>
+		<div class="divider py-4 font-bagnard">Kerangka</div>
 		<SupporterList
 			size="h-24"
 			list={[
@@ -164,7 +164,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider pt-4">Kredit</div>
+		<div class="divider py-4 font-bagnard">Kredit</div>
 		<ul class="w-full flex flex-row flex-wrap justify-center">
 			<li>
 				<a
@@ -197,7 +197,7 @@ const Supporters = () => (
 				</a>
 			</li>
 		</ul>
-		<div class="divider" />
+		<div class="divider py-4" />
 	</div>
 );
 
