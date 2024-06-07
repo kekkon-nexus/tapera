@@ -5,6 +5,7 @@ export default createRoute((c) =>
 		<>
 			<Hero />
 			<Services />
+			<Supporters />
 		</>,
 		{
 			title: "Tepar",
@@ -87,4 +88,132 @@ const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 			<p>{description}</p>
 		</div>
 	</a>
+);
+
+const Supporters = () => (
+	<div id="supporters">
+		<h2 class="px-10 pt-10 text-4xl font-bagnard text-center">Suporter</h2>
+		<div class="divider pt-4">Inspirasi</div>
+		<SupporterList
+			size="h-[36rem]"
+			list={[
+				{
+					href: "https://www.facebook.com/groups/1032515944638255",
+					src: "/static/supports/imphnen.png",
+					alt: "Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
+				},
+			]}
+		/>
+		<div class="divider pt-4">Teknologi</div>
+		<SupporterList
+			size="h-36"
+			list={[
+				{
+					href: "https://hono.dev/",
+					src: "/static/supports/Hono.png",
+					alt: "Hono",
+				},
+				{
+					href: "https://tailwindcss.dev/",
+					src: "/static/supports/Tailwindcss6.png",
+					alt: "Tailwind",
+				},
+				{
+					href: "https://vitejs.dev/",
+					src: "/static/supports/Vite.png",
+					alt: "Vite",
+				},
+			]}
+		/>
+		<div class="divider pt-4">Kerangka</div>
+		<SupporterList
+			size="h-24"
+			list={[
+				{
+					href: "https://bun.sh/",
+					src: "/static/supports/BunLogo.png",
+					alt: "Bun",
+				},
+				{
+					href: "https://www.typescriptlang.org/",
+					src: "/static/supports/TypeScript.png",
+					alt: "TypeScript",
+				},
+				{
+					href: "https://react.dev/",
+					src: "/static/supports/React.png",
+					alt: "React",
+				},
+				{
+					href: "https://github.com/",
+					src: "/static/supports/GitHub.png",
+					alt: "GitHub",
+				},
+				{
+					href: "https://code.visualstudio.com/",
+					src: "/static/supports/VSCode.png",
+					alt: "Visual Studio Code",
+				},
+			]}
+		/>
+		<div class="divider pt-4">Kredit</div>
+		<ul class="w-full flex flex-row flex-wrap justify-center">
+			<li>
+				<a
+					href="https://twitter.com/sawaratsuki1004"
+					target="_blank"
+					rel="noreferrer"
+					class="m-4"
+				>
+					SAWARATSUKI
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://twitter.com/Aikoyori"
+					target="_blank"
+					rel="noreferrer"
+					class="m-4"
+				>
+					Aikoyori
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://www.facebook.com/HenriKoiwai/"
+					target="_blank"
+					rel="noreferrer"
+					class="m-4"
+				>
+					Henri Koiwai
+				</a>
+			</li>
+		</ul>
+		<div class="divider" />
+	</div>
+);
+
+type SupporterListProp = {
+	size: "h-[36rem]" | "h-36" | "h-24";
+	list?: {
+		href: string;
+		src: string;
+		alt: string;
+	}[];
+};
+
+const SupporterList = ({ size, list }: SupporterListProp) => (
+	<ul class="w-full flex flex-row flex-wrap justify-center">
+		{list?.map(({ href, src, alt }) => (
+			<li>
+				<a href={href} target="_blank" rel="noreferrer">
+					<img
+						src={src}
+						alt={alt}
+						class={`${size} hover:scale-110 transition-transform`}
+					/>
+				</a>
+			</li>
+		))}
+	</ul>
 );
