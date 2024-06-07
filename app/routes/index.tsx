@@ -21,7 +21,7 @@ export default createRoute((c) =>
 );
 
 const Hero = () => (
-	<div id="hero" class="hero min-h-screen bg-base-200">
+	<div id="hero" class="hero min-h-[calc(100vh-68px)] bg-base-200">
 		<div class="hero-content text-center">
 			<div class="max-w-md">
 				<p class="text-xl">

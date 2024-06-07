@@ -95,7 +95,7 @@ export default jsxRenderer(
 				/>
 			</head>
 			<body hx-boost="true" hx-ext="preload">
-				<header class="w-full fixed top-0 z-10">
+				<header class="w-full sticky top-0 z-10">
 					<nav class="navbar bg-base-300">
 						<div class="navbar-start">
 							<a
