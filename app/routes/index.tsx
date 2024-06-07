@@ -18,12 +18,13 @@ const Hero = () => (
 		<div class="hero-content text-center">
 			<div class="max-w-md">
 				<p class="text-xl">
-					Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau
-					mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik
-					dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar
-					kesusilaan.
+					Websitenya jelek, lambat, gak optimisasi.
+					<br />
+					Padahal udah 3 tahun diperbaiki, tapi gak ada hasil.
+					<br />
+					Ini website dibikin 3 hari aja.
 				</p>
-				<p class="pt-4 font-bagnard text-sm">Pasal 27 Ayat 1-3 — UU ITE</p>
+				<p class="pt-4 font-bagnard text-sm">Menuju Indonesia (C)EMAS — 2045</p>
 				<a
 					href="https://youtu.be/dCEMSaho0io?si=BCm9WF6xL0clejE3"
 					target="_blank"
