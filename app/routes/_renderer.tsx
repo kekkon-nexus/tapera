@@ -16,11 +16,18 @@ export default jsxRenderer(({ children, title }, c) => (
 
 			<Link rel="stylesheet" href="/style.css" />
 			<Script src="/app/client.ts" async nonce={c.get("secureHeadersNonce")} />
+
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+				rel="stylesheet"
+			/>
 		</head>
 		<body>
-			<header>
+			<header class="fixed w-full">
 				<nav class="navbar bg-base-100">
-					<a href="/" class="btn btn-ghost text-xl">
+					<a href="/" class="btn btn-ghost text-xl font-bagnard float-start">
 						<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
 						Tapera
 					</a>
