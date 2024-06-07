@@ -50,7 +50,7 @@ export default jsxRenderer(({ children, title }, c) => (
 				<aside class="items-center grid-flow-col">
 					<p>
 						<span class="font-bagnard">
-							Badan Pengelola Apa Gitu Lupa Namanya
+							Badan Pengelola Pembusukan Otak Indonesia
 						</span>
 						<br />
 						Copyright <b>yvvki</b> © 2024 — All right reserved

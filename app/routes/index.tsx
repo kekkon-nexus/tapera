@@ -18,11 +18,12 @@ const Hero = () => (
 		<div class="hero-content text-center">
 			<div class="max-w-md">
 				<p class="text-xl">
-					Setiap orang berhak hidup sejahtera lahir dan batin, bertempat
-					tinggal, dan mendapatkan lingkungan hidup yang baik dan sehat serta
-					berhak memperoleh pelayanan kesehatan.
+					Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau
+					mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik
+					dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar
+					kesusilaan.
 				</p>
-				<p class="pt-4 font-bagnard text-sm">UUD 1945 — Pasal 28H Ayat 1</p>
+				<p class="pt-4 font-bagnard text-sm">Pasal 27 Ayat 1-3 — UU ITE</p>
 				<a
 					href="https://youtu.be/dCEMSaho0io?si=BCm9WF6xL0clejE3"
 					target="_blank"
@@ -43,26 +44,26 @@ const Services = () => (
 			<ServiceCard
 				href="#"
 				icon="&#xe2eb;"
-				title="KPA Tepar"
-				description="Program pembiayaan kepemilikan anime pertama."
+				title="KPS Tepar"
+				description="Program pembiayaan kepemilikan skibidi pertama."
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf100;"
-				title="KRA Tepar"
-				description="Program pembiayaan perbaikan anime pertama."
+				title="KRS Tepar"
+				description="Program pembiayaan perbaikan skibidi pertama."
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf14d;"
-				title="KBA Tepar"
-				description="Program pembiayaan anime pertama di atas tanah pribadi."
+				title="KBS Tepar"
+				description="Program pembiayaan skibidi pertama di atas tanah pribadi."
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xe73a;"
-				title="KPA NEET"
-				description="Program pembiayaan kepemilikan anime bagi masyarakat NEET."
+				title="KPS NSGM"
+				description="Program pembiayaan kepemilikan skibidi bagi masyarakat non-SIGMA."
 			/>
 		</div>
 	</div>
