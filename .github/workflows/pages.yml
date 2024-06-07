@@ -19,6 +19,7 @@ jobs:
         with:
           deno-version: v1.x
 
+      - run: bun install
       - run: bun run build
 
       - uses: actions/configure-pages@v5
