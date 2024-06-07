@@ -21,7 +21,7 @@ const Hero = () => (
 					tinggal, dan mendapatkan lingkungan hidup yang baik dan sehat serta
 					berhak memperoleh pelayanan kesehatan.
 				</p>
-				<p class="py-4 font-bagnard text-sm">UUD 1945 — Pasal 28H Ayat 1</p>
+				<p class="pt-4 font-bagnard text-sm">UUD 1945 — Pasal 28H Ayat 1</p>
 				<button type="button" class="m-4 btn btn-primary">
 					Info Lebih Lanjut
 				</button>
