@@ -41,7 +41,7 @@ export default jsxRenderer(({ children, title }, c) => (
 				<nav class="navbar bg-base-100">
 					<a href="/" class="btn btn-ghost float-start text-xl font-bagnard">
 						<img src="/static/favicon.svg" alt="Tapera" class="h-6 w-6" />
-						<p>Tapera</p>
+						<p>Tepar</p>
 					</a>
 				</nav>
 			</header>
@@ -50,37 +50,25 @@ export default jsxRenderer(({ children, title }, c) => (
 				<aside class="items-center grid-flow-col">
 					<p>
 						<span class="font-bagnard">
-							Badan Pengelola Tabungan Perumahan Rakyat
+							Badan Pengelola Apa Gitu Lupa Namanya
 						</span>
 						<br />
-						Copyright © 2024 - All right reserved
+						Copyright <b>yvvki</b> © 2024 — All right reserved
 					</p>
 				</aside>
 				<nav class="md:place-self-center md:justify-self-end">
 					<div class="grid grid-flow-col gap-4 text-2xl leading-none transition-colors">
 						<a
-							href="https://www.instagram.com/bp.tapera"
-							class="hover:text-[#E4405F]"
-						>
-							<i class="si si-instagram" />
-						</a>
-						<a
-							href="https://www.facebook.com/BPTAPERA"
+							href="https://www.facebook.com/yvvkir"
 							class="hover:text-[#0866FF]"
 						>
 							<i class="si si-facebook" />
 						</a>
-						<a href="https://x.com/BP_Tapera" class="hover:text-[#000000]">
+						<a href="https://x.com/yvvvvvvr" class="hover:text-[#000000]">
 							<i class="si si-x" />
 						</a>
 						<a
-							href="https://www.linkedin.com/company/bp-tapera"
-							class="hover:text-[#0A66C2]"
-						>
-							<i class="si si-linkedin" />
-						</a>
-						<a
-							href="https://www.youtube.com/channel/UCmZovvae-0ZkoRH6o4uWMFw"
+							href="https://www.youtube.com/@yvvkiRika"
 							class="hover:text-[#FF0000]"
 						>
 							<i class="si si-youtube" />

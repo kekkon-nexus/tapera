@@ -18,7 +18,7 @@ export default createRoute((c) =>
 			</div>
 		</div>,
 		{
-			title: "Tapera",
+			title: "Tepar",
 		},
 	),
 );
