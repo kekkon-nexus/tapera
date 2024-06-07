@@ -9,6 +9,7 @@ export default createRoute((c) =>
 			<Supporters />
 		</>,
 		{
+			route: "",
 			description: "Tapera tapi jelek!",
 			og: {
 				title: Name,

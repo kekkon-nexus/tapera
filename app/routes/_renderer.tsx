@@ -3,7 +3,7 @@ import { Link, Script } from "honox/server";
 import { Name } from "../application";
 
 export default jsxRenderer(
-	({ children, title, author, description, keywords, og }, c) => (
+	({ children, route, title, author, description, keywords, og }, c) => (
 		<html lang="en">
 			<head>
 				<meta charset="UTF-8" />
@@ -100,11 +100,26 @@ export default jsxRenderer(
 						<div class="navbar-start">
 							<a
 								href="/"
-								class="btn btn-ghost float-start text-xl font-bagnard"
+								class={`btn btn-ghost ${route === "" ? "btn-active" : ""} float-start text-xl font-bagnard`}
+								preload="mousedown"
 							>
 								<img src="/static/favicon.svg" alt={Name} class="h-6 w-6" />
 								<p>{Name}</p>
 							</a>
+						</div>
+						<div class="navbar-center">
+							<ul class="menu menu-horizontal px-1">
+								<li>
+									<a
+										href="/about"
+										class={route === "about" ? "active" : ""}
+										preload="mousedown"
+										preload-images="true"
+									>
+										Tentang
+									</a>
+								</li>
+							</ul>
 						</div>
 						<div class="navbar-end">
 							<a

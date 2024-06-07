@@ -3,6 +3,7 @@ import type {} from "../node_modules/hono/dist/types/jsx/intrinsic-elements";
 import type {} from "typed-htmx";
 
 type Head = {
+	route?: "" | "about"
 	title?: string;
 	author?: string;
 	description?: string;
