@@ -1,15 +1,26 @@
-# tapera-tapi-jelek
+# Tapera Tapi Jelek
 
-To install dependencies:
+[![Publish](https://github.com/yvvki/tapera-tapi-jelek/actions/workflows/pages.yml/badge.svg)](https://github.com/yvvki/tapera-tapi-jelek/actions/workflows/pages.yml)
 
-```bash
+For the brainrot...
+
+## Developing
+
+Install the dependencies and run the dev script.
+
+```sh
 bun install
+bun run dev
 ```
 
-To run:
+To build, run the build script
 
-```bash
-bun run index.ts
+```sh
+bun build
 ```
 
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+The compiled SSG is in the 'dist' directory.
+
+## License
+
+See the [MIT License](LICENSE).
