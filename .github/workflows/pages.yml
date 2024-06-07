@@ -1,0 +1,35 @@
+name: Publish on GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v1
+        with:
+          deno-version: v1.x
+
+      - run: bun run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist/"
+
+  deploy:
+      runs-on: ubuntu-latest
+
+      steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

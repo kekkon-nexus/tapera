@@ -10,5 +10,8 @@
 	},
 	"[xml]": {
 		"editor.defaultFormatter": "redhat.vscode-xml"
+	},
+	"[yaml]": {
+		"editor.insertSpaces": true
 	}
 }
