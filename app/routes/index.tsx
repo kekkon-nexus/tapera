@@ -22,9 +22,14 @@ const Hero = () => (
 					berhak memperoleh pelayanan kesehatan.
 				</p>
 				<p class="pt-4 font-bagnard text-sm">UUD 1945 — Pasal 28H Ayat 1</p>
-				<button type="button" class="m-4 btn btn-primary">
+				<a
+					href="https://youtu.be/dCEMSaho0io?si=BCm9WF6xL0clejE3"
+					target="_blank"
+					rel="noreferrer"
+					class="m-4 btn btn-primary"
+				>
 					Info Lebih Lanjut
-				</button>
+				</a>
 			</div>
 		</div>
 	</div>
