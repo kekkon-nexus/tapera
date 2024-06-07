@@ -106,7 +106,7 @@ const Supporters = () => (
 			size="h-[36rem]"
 			list={[
 				{
-					href: "https://www.facebook.com/groups/1032515944638255",
+					href: "https://www.facebook.com/groups/programmerhandal",
 					src: "/static/supports/imphnen.png",
 					alt: "Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
 				},
