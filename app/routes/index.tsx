@@ -4,7 +4,7 @@ export default createRoute((c) =>
 	c.render(
 		<>
 			<Hero />
-			<Products />
+			<Services />
 		</>,
 		{
 			title: "Tepar",
@@ -35,46 +35,46 @@ const Hero = () => (
 	</div>
 );
 
-const Products = () => (
-	<div id="products" class="m-4">
-		<h2 class="px-10 pt-10 text-4xl font-bagnard text-center">Products</h2>
+const Services = () => (
+	<div id="services" class="m-4">
+		<h2 class="px-10 pt-10 text-4xl font-bagnard text-center">Servis</h2>
 		<div class="flex flex-row flex-wrap">
-			<ProductCard
+			<ServiceCard
 				href="#"
 				icon="&#xe2eb;"
-				title="KPR Tepar"
-				description="Program pembiayaan kepemilikan rumah pertama."
+				title="KPA Tepar"
+				description="Program pembiayaan kepemilikan anime pertama."
 			/>
-			<ProductCard
+			<ServiceCard
 				href="#"
 				icon="&#xf100;"
-				title="KRR Tepar"
-				description="Program pembiayaan perbaikan rumah pertama."
+				title="KRA Tepar"
+				description="Program pembiayaan perbaikan anime pertama."
 			/>
-			<ProductCard
+			<ServiceCard
 				href="#"
 				icon="&#xf14d;"
-				title="KBR Tepar"
-				description="Program pembiayaan rumah pertama di atas tanah pribadi."
+				title="KBA Tepar"
+				description="Program pembiayaan anime pertama di atas tanah pribadi."
 			/>
-			<ProductCard
+			<ServiceCard
 				href="#"
 				icon="&#xe73a;"
-				title="KPR FLPP"
-				description="Program pembiayaan kepemilikan rumah bagi masyarakat non-ASN."
+				title="KPA NEET"
+				description="Program pembiayaan kepemilikan anime bagi masyarakat NEET."
 			/>
 		</div>
 	</div>
 );
 
-type ProductCardProp = {
+type ServiceCardProp = {
 	href: string;
 	icon: string;
 	title: string;
 	description: string;
 };
 
-const ProductCard = ({ href, icon, title, description }: ProductCardProp) => (
+const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 	<a
 		href={href}
 		class="card flex-auto w-64 m-4 bg-base-100 shadow-lg hover:shadow-xl hover:bg-primary hover:text-primary-content transition-all"
