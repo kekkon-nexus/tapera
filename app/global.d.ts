@@ -4,6 +4,14 @@ import type {} from "typed-htmx";
 
 type Head = {
 	title?: string;
+	author?: string;
+	description?: string;
+	keywords?: string;
+	og?: {
+		title?: true | string;
+		description?: true | string;
+		image?: string;
+	};
 };
 
 declare module "hono" {

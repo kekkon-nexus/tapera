@@ -1,4 +1,5 @@
 import { createRoute } from "honox/factory";
+import { Name } from "../application";
 
 export default createRoute((c) =>
 	c.render(
@@ -8,7 +9,12 @@ export default createRoute((c) =>
 			<Supporters />
 		</>,
 		{
-			title: "Tepar",
+			description: "Tapera tapi jelek!",
+			og: {
+				title: Name,
+				description: true,
+				image: "/static/apple-touch-icon.png",
+			},
 		},
 	),
 );
@@ -45,19 +51,19 @@ const Services = () => (
 			<ServiceCard
 				href="#"
 				icon="&#xe2eb;"
-				title="KPS Tepar"
+				title={`KPS ${Name}`}
 				description="Program pembiayaan kepemilikan skibidi pertama."
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf100;"
-				title="KRS Tepar"
+				title={`KRS ${Name}`}
 				description="Program pembiayaan perbaikan skibidi pertama."
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf14d;"
-				title="KBS Tepar"
+				title={`KBS ${Name}`}
 				description="Program pembiayaan skibidi pertama di atas tanah pribadi."
 			/>
 			<ServiceCard
