@@ -219,7 +219,7 @@ const SupporterList = ({ size, list }: SupporterListProp) => (
 					<img
 						src={src}
 						alt={alt}
-						class={`${size} hover:scale-110 transition-transform`}
+						class={`${size} object-contain hover:scale-110 transition-transform`}
 					/>
 				</a>
 			</li>
