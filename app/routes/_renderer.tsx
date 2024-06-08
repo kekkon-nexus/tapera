@@ -98,6 +98,49 @@ export default jsxRenderer(
 				<header class="w-full sticky top-0 z-10">
 					<nav class="navbar bg-base-300">
 						<div class="navbar-start">
+							<div className="dropdown">
+								<div tabindex={0} class="btn btn-ghost lg:hidden">
+									<span className="material-symbols-outlined">&#xe5d2;</span>
+								</div>
+								<ul
+									tabindex={0}
+									class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+								>
+									<li>
+										<a
+											href="/about"
+											class={route === "about" ? "active" : ""}
+											preload="mousedown"
+											preload-images="true"
+										>
+											Tentang
+										</a>
+									</li>
+									<li>
+										<h2 class="menu-title">Portal</h2>
+										<ul class="p-2">
+											<li>
+												<a
+													href="https://sitara.tapera.nojin.site/"
+													preload="mousedown"
+													preload-images="true"
+												>
+													Sitara
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://taxheaven3000.com/"
+													preload="mousedown"
+													preload-images="true"
+												>
+													Applikasi
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
 							<a
 								href="/"
 								class={`btn btn-ghost ${route === "" ? "btn-active" : ""} float-start text-xl font-bagnard`}
@@ -107,7 +150,7 @@ export default jsxRenderer(
 								<p>{Name}</p>
 							</a>
 						</div>
-						<div class="navbar-center">
+						<div class="navbar-center hidden lg:flex">
 							<ul class="menu menu-horizontal px-1">
 								<li>
 									<a
@@ -118,6 +161,31 @@ export default jsxRenderer(
 									>
 										Tentang
 									</a>
+								</li>
+								<li>
+									<details>
+										<summary>Portal</summary>
+										<ul class="p-2">
+											<li>
+												<a
+													href="https://sitara.tapera.nojin.site/"
+													preload="mousedown"
+													preload-images="true"
+												>
+													Sitara
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://taxheaven3000.com/"
+													preload="mousedown"
+													preload-images="true"
+												>
+													Applikasi
+												</a>
+											</li>
+										</ul>
+									</details>
 								</li>
 							</ul>
 						</div>
