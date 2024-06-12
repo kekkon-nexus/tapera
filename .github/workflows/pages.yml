@@ -1,23 +1,17 @@
-name: Publish
+name: Pages
 
 on:
-  push:
-    branches: [ main ]
-
-permissions:
-  pages: write
-  id-token: write
+  push: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
       - uses: oven-sh/setup-bun@v1
         with:
-          deno-version: v1.x
+          bun-version: latest
 
       - run: bun install
       - run: bun run build
@@ -29,10 +23,12 @@ jobs:
           path: "dist/"
 
   deploy:
-      needs: build
-
-      runs-on: ubuntu-latest
-
-      steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+    needs: build
+    if: github.ref_name == github.event.repository.default_branch
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+    - id: deployment
+      uses: actions/deploy-pages@v4
