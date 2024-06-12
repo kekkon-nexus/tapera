@@ -8,7 +8,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['"Titillium Web"', "sans-serif"],
-				bagnard: ['"Bagnard"', "serif"],
+				title: ['"Bagnard"', "serif"],
 			},
 		},
 	},
@@ -31,5 +31,4 @@ export default {
 			},
 		],
 	},
-	darkMode: ["class", '[data-theme="night"]'],
 } satisfies Config as Config;

@@ -25,19 +25,12 @@ const Hero = () => (
 		<div class="hero-content text-center">
 			<div class="max-w-md">
 				<p class="text-xl">
-					Websitenya jelek, lambat, gak optimisasi.
-					<br />
-					Padahal udah 3 tahun diperbaiki, tapi gak ada hasil.
-					<br />
-					Ini website dibikin 3 hari aja.
+					Setiap orang berhak hidup sejahtera lahir dan batin, bertempat
+					tinggal, dan mendapatkan lingkungan hidup yang baik dan sehat serta
+					berhak memperoleh pelayanan kesehatan.
 				</p>
-				<p class="pt-4 font-bagnard text-sm">Menuju Indonesia (C)EMAS — 2045</p>
-				<a
-					href="https://youtu.be/dCEMSaho0io?si=BCm9WF6xL0clejE3"
-					target="_blank"
-					rel="noreferrer"
-					class="m-4 btn btn-primary"
-				>
+				<p class="pt-4 font-title text-sm">Pasal 28H ayat (1) — UUD 1945</p>
+				<a href="#" class="m-4 btn btn-primary">
 					Info Lebih Lanjut
 				</a>
 			</div>
@@ -47,31 +40,31 @@ const Hero = () => (
 
 const Services = () => (
 	<div id="services" class="m-4">
-		<h2 class="p-10 text-4xl font-bagnard text-center">Jasa</h2>
+		<h2 class="p-10 text-4xl font-title text-center">Program</h2>
 		<div class="flex flex-row flex-wrap">
 			<ServiceCard
 				href="#"
 				icon="&#xe2eb;"
-				title={`KPS ${Name}`}
-				description="Program pembiayaan kepemilikan skibidi pertama."
+				title={`KPR ${Name}`}
+				description="Program pembiayaan kepemilikan rumah pertama"
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf100;"
-				title={`KRS ${Name}`}
-				description="Program pembiayaan perbaikan skibidi pertama."
+				title={`KRR ${Name}`}
+				description="Program pembiayaan perbaikan rumah pertama"
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xf14d;"
-				title={`KBS ${Name}`}
-				description="Program pembiayaan skibidi pertama di atas tanah pribadi."
+				title={`KBR ${Name}`}
+				description="Program pembiayaan rumah pertama di atas tanah pribadi"
 			/>
 			<ServiceCard
 				href="#"
 				icon="&#xe73a;"
-				title="KPS NSGM"
-				description="Program pembiayaan kepemilikan skibidi bagi masyarakat non-SIGMA."
+				title="KPR PLPP"
+				description="Program pembiayaan kepemilikan rumah bagi masyarakat non-ASN"
 			/>
 		</div>
 	</div>
@@ -93,7 +86,7 @@ const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 			<span class="text-5xl font-variation-grade-200 align-middle">{icon}</span>
 		</figure>
 		<div class="card-body items-center text-center">
-			<h2 class="card-title font-bagnard">{title}</h2>
+			<h2 class="card-title font-title">{title}</h2>
 			<p>{description}</p>
 		</div>
 	</a>
@@ -101,8 +94,8 @@ const ServiceCard = ({ href, icon, title, description }: ServiceCardProp) => (
 
 const Supporters = () => (
 	<div id="supporters">
-		<h2 class="p-10 text-4xl font-bagnard text-center">Pendukung</h2>
-		<div class="divider py-4 font-bagnard">Inspirasi</div>
+		<h2 class="p-10 text-4xl font-title text-center">Pendukung</h2>
+		<div class="divider py-4 font-title">Inspirasi</div>
 		<SupporterList
 			size="h-[36rem]"
 			list={[
@@ -113,7 +106,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider py-4 font-bagnard">Teknologi</div>
+		<div class="divider py-4 font-title">Teknologi</div>
 		<SupporterList
 			size="h-36"
 			list={[
@@ -134,7 +127,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider py-4 font-bagnard">Kerangka</div>
+		<div class="divider py-4 font-title">Kerangka</div>
 		<SupporterList
 			size="h-24"
 			list={[
@@ -165,7 +158,7 @@ const Supporters = () => (
 				},
 			]}
 		/>
-		<div class="divider py-4 font-bagnard">Kredit</div>
+		<div class="divider py-4 font-title">Kredit</div>
 		<ul class="w-full flex flex-row flex-wrap justify-center">
 			<li>
 				<a

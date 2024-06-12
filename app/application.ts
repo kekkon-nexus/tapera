@@ -1,2 +1,3 @@
 
-export const Name = "Tepar"
+export const Name = "Tapera"
+export const Company = "Badan Pengelola Tabungan Perumahan Rakyat"

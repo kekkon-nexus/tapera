@@ -1,6 +1,6 @@
 import { jsxRenderer } from "hono/jsx-renderer";
 import { Link, Script } from "honox/server";
-import { Name } from "../application";
+import { Company, Name } from "../application";
 
 export default jsxRenderer(
 	({ children, route, title, author, description, keywords, og }, c) => (
@@ -143,7 +143,7 @@ export default jsxRenderer(
 							</div>
 							<a
 								href="/"
-								class={`btn btn-ghost ${route === "" ? "btn-active" : ""} float-start text-xl font-bagnard`}
+								class={`btn btn-ghost ${route === "" ? "btn-active" : ""} float-start text-xl font-title`}
 								preload="mousedown"
 							>
 								<img src="/static/favicon.svg" alt={Name} class="h-6 w-6" />
@@ -177,7 +177,7 @@ export default jsxRenderer(
 											</li>
 											<li>
 												<a
-													href="https://taxheaven3000.com/"
+													href="#"
 													preload="mousedown"
 													preload-images="true"
 												>
@@ -189,46 +189,29 @@ export default jsxRenderer(
 								</li>
 							</ul>
 						</div>
-						<div class="navbar-end">
-							<a
-								href="https://github.com/yvvki/tapera-tapi-jelek.git"
-								class="btn btn-circle btn-ghost"
-							>
-								<i class="si si-github text-2xl" />
-							</a>
-						</div>
+						<div class="navbar-end" />
 					</nav>
 				</header>
 				<main>{children}</main>
 				<footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
 					<aside class="items-center grid-flow-col">
 						<p>
-							<span class="font-bagnard">
-								Badan Pengelola Pembusukan Otak Indonesia
-							</span>
+							<span class="font-title">{Company}</span>
 							<br />
-							Copyright <b>yvvki</b> © 2024 — All right reserved
+							Copyright{" "}
+							<a href="https://kekkon.nexus" class="font-bold link-hover">
+								Kekkon Nexus
+							</a>{" "}
+							© 2024 — All right reserved
 						</p>
 					</aside>
 					<nav class="md:place-self-center md:justify-self-end">
 						<div class="grid grid-flow-col gap-4 text-2xl leading-none">
 							<a
-								href="https://www.facebook.com/yvvkir"
-								class="hover:text-[#0866FF] transition-colors"
+								href="https://github.com/yvvki/tapera-tapi-jelek.git"
+								class="hover:text-[#181717] dark:hover:text-[#e7e8e8] transition-colors"
 							>
-								<i class="si si-facebook" />
-							</a>
-							<a
-								href="https://x.com/yvvvvvvr"
-								class="hover:text-[#000000] transition-colors"
-							>
-								<i class="si si-x" />
-							</a>
-							<a
-								href="https://www.youtube.com/@yvvkiRika"
-								class="hover:text-[#FF0000] transition-colors"
-							>
-								<i class="si si-youtube" />
+								<i class="si si-github" />
 							</a>
 						</div>
 					</nav>
