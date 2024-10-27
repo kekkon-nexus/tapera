@@ -17,7 +17,7 @@ type Head = {
 
 declare module "hono" {
 	interface ContextRenderer {
-		// biome-ignore lint/style/useShorthandFunctionType: <explanation>
+		// biome-ignore lint/style/useShorthandFunctionType: Overloading
 		(
 			content: string | Promise<string>,
 			head?: Head,
@@ -25,9 +25,8 @@ declare module "hono" {
 	}
 }
 
-// TODEL: https://github.com/honojs/hono/issues/2927
-declare module "../node_modules/hono/dist/types/jsx/intrinsic-elements" {
-	namespace Hono {
-		interface HTMLAttributes extends HtmxAttributes {}
-	}
+declare module 'hono/jsx' {
+  namespace JSX {
+    interface HTMLAttributes extends HtmxAttributes {}
+  }
 }
