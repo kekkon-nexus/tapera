@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "Bagnard";
-	src: url("/static/Bagnard.otf");
+@layer base {
+	@font-face {
+		font-family: 'Bagnard';
+		src: url(/static/Bagnard.otf) format('opentype');
+	}
 }
 
 @layer utilities {

@@ -53,12 +53,12 @@ export default jsxRenderer(
 					<></>
 				)}
 
-				<link rel="icon" href="/static/favicon.svg" />
-				<link rel="mask-icon" href="/static/favicon.svg" color="#0d6" />
+				<link rel="icon" href="/favicon.svg" />
+				<link rel="mask-icon" href="/favicon.svg" color="#0d6" />
 				<link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
-				<link rel="manifest" href="/static/app.webmanifest" />
+				<link rel="manifest" href="/app.webmanifest" />
 
-				<Link rel="stylesheet" href="/style.css" />
+				<Link rel="stylesheet" href="/app/style.css" />
 				<Script
 					src="/app/client.ts"
 					async
@@ -146,7 +146,7 @@ export default jsxRenderer(
 								class={`btn btn-ghost ${route === "" ? "btn-active" : ""} float-start text-xl font-title`}
 								preload="mousedown"
 							>
-								<img src="/static/favicon.svg" alt={Name} class="h-6 w-6" />
+								<img src="/favicon.svg" alt={Name} class="h-6 w-6" />
 								<p>{Name}</p>
 							</a>
 						</div>

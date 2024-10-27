@@ -1,24 +1,22 @@
 import ssg from "@hono/vite-ssg";
-import honox from "honox/vite";
-import client from "honox/vite/client";
+import honox, { devServerDefaultOptions } from "honox/vite";
 import { defineConfig } from "vite";
 
 const entry = "./app/server.ts";
 
-export default defineConfig(({ mode }) =>
-	mode === "client"
-		? {
-				build: {
-					rollupOptions: {
-						input: ["/style.css"],
-					},
+export default defineConfig(() => {
+	return {
+		plugins: [
+			honox({
+				devServer: {
+					exclude: [
+						...devServerDefaultOptions.exclude,
+						/^.*\.webmanifest$/,
+						/^\/favicon\.svg$/,
+					],
 				},
-				plugins: [client()],
-			}
-		: {
-				build: {
-					emptyOutDir: false,
-				},
-				plugins: [honox(), ssg({ entry })],
-			},
-);
+			}),
+			ssg({ entry }),
+		],
+	};
+});
