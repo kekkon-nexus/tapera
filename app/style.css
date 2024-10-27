@@ -10,6 +10,6 @@
 }
 
 @layer utilities {
-	.font-variation-fill { font-variation-settings: 'FILL' 1 };
-	.font-variation-grade-200 { font-variation-settings: 'GRAD' 200 };
+	.font-variation-fill { font-variation-settings: 'FILL' 1; }
+	.font-variation-grade-200 { font-variation-settings: 'GRAD' 200; }
 }
