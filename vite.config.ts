@@ -8,7 +8,11 @@ const entry = "./app/server.ts";
 export default defineConfig(({ mode }) => {
 	if (mode === "client") {
 		return {
-			plugins: [client()],
+			plugins: [
+				client({
+					input: ["/app/style.css"],
+				}),
+			],
 		};
 	}
 
