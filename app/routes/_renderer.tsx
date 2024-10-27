@@ -81,16 +81,16 @@ export default jsxRenderer(
 				/>
 				<link
 					rel="stylesheet"
-					href="https://unpkg.com/simple-icons-font@v12/font/simple-icons.min.css"
+					href="https://unpkg.com/simple-icons-font@v13/font/simple-icons.min.css"
 				/>
 				<script
-					src="https://unpkg.com/htmx.org@1.9.12"
-					integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+					src="https://unpkg.com/htmx.org@2.0.3"
+					integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
 					crossorigin="anonymous"
 				/>
 				<script
-					src="https://unpkg.com/htmx.org@1.9.12/dist/ext/preload.js"
-					integrity="sha384-NoiTdF/KjxH4wa6OHMdM4F6e/LIPNMcFBgOIINTTaczWo0vX1mWTOzckySqlGQS/"
+					src="https://unpkg.com/htmx.org@2.0.3/dist/ext/preload.js"
+					integrity="sha384-XmvJtx5yFK9k4QvrFIGb7mE73enCNVyqaRMWal3O63mtNX0KA5A5pOQo/9OLZeI9"
 					crossorigin="anonymous"
 				/>
 			</head>
@@ -176,11 +176,7 @@ export default jsxRenderer(
 												</a>
 											</li>
 											<li>
-												<a
-													href="#"
-													preload="mousedown"
-													preload-images="true"
-												>
+												<a href="#" preload="mousedown" preload-images="true">
 													Applikasi
 												</a>
 											</li>
